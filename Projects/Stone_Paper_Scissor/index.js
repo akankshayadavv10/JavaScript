@@ -16,35 +16,38 @@ return ComputerMove;
 function playedRock(){
     let  move =playComputer()
      if(move=="Rock"){
-         alert(`You choose Rock and Computer choosen ${move}, so Game is TIED!`)
+         alert(`You have choosen Rock and Computer choosen ${move}, so Game is TIED!`)
      }
      else if(move=="Paper"){
-         alert(`You choose Rock and Computer choosen ${move}, so Computer WINS`)
- 
-     }
+         alert(`You have choosen Rock and Computer choosen ${move}, so Computer WINS`)
+        }
      else{
-         alert(`You choose Rock and Computer choosen ${move}, so You WINS!`)
+         alert(`You have choosen Rock and Computer choosen ${move}, so You WINS!`)
      }
  }
  function playedPaper(){
     let  move =playComputer()
      if(move=="Rock"){
-         alert(`You choose Paper and Computer choosen ${move}, so you WiNS!`)
-     }else if(move=="Paper"){
-         alert(`You choose Paper and Computer choosen ${move}, so the game TIED!`)
+         alert(`You have choosen Paper and Computer choosen ${move}, so you WINS!`)
+     }
+     else if(move=="Paper"){
+         alert(`You have choosen Paper and Computer choosen ${move}, so the game TIED!`)
  
-     }else{
-         alert(`You choose Paper and Computer choosen ${move}, so Computer WINS!`)
+     }
+     else{
+         alert(`You have choosen Paper and Computer choosen ${move}, so Computer WINS!`)
      }
  }
  function playedScissor(){
     let  move =playComputer()
      if(move=="Rock"){
-         alert(`You choose Scissor and Computer choosen ${move}, so Computer WINS!`)
-     }else if(move=="Paper"){
-         alert(`You choose Scissor and Computer choosen ${move}, so you WINS!`)
+         alert(`You have choosen Scissor and Computer choosen ${move}, so Computer WINS!`)
+     }
+     else if(move=="Paper"){
+         alert(`You have choosen Scissor and Computer choosen ${move}, so you WINS!`)
  
-     }else{
-         alert(`You choose Scissor and Computer choosen ${move}, so game is TIED!`)
+     }
+     else{
+         alert(`You have choosen Scissor and Computer choosen ${move}, so game is TIED!`)
      }
  }
