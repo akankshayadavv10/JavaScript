@@ -12,7 +12,7 @@ console.log(arr2[3]);
 arr2[2]="Hello";
 console.log(arr2);
 
-// Lenght Property
+// Length Property
 let arr3=[1,3,67,"Akku",true];
 console.log(arr.length);
 
