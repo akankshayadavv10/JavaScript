@@ -74,5 +74,5 @@ console.log(array);
 
 // // includes()
 console.log(arr);
-let a=arr.includes(50);
-console.log
+let a1=arr.includes(50);
+console.log(a1);
