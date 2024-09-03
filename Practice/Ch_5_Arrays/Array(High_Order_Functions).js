@@ -138,6 +138,7 @@ let arr10=[1,4,5,90];
 arr10.fill(21,6,2);
 console.log(arr10);
 
+
 // revwerse()
 let array11=[1,4,8,90];
 array11.reverse();
