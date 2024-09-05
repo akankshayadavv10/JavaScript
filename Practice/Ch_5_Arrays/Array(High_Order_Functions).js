@@ -106,6 +106,7 @@ let given7=[2,4,6,-8,10];
 let result7=given7.filter(filterPos);
 console.log(result7);
 
+
 // find index(used to find the index of the array)
 function findIndex(element,array,index){
     return element>20;
@@ -139,7 +140,73 @@ arr10.fill(21,6,2);
 console.log(arr10);
 
 
-// revwerse()
+// reverse()
 let array11=[1,4,8,90];
 array11.reverse();
 console.log(array11);
+
+// for each(provide the function once for each elelemnt)
+let user=["Akanksha","Shreyanshi","Gungun"];
+let Capital=user.forEach(function(element){
+    console.log(element.toUpperCase())
+})
+
+// 2
+let items=[1,3,5];
+let copy=[];
+items.forEach(function(items){
+    copy.push(items*items)
+});
+console.log(copy);
+
+
+// sort(sort the element according to the condition in ascending order)
+let givenn=[23,57,11,34];
+let resulttt=givenn.sort(subtract);
+function subtract(a,b){
+    return a-b;
+}
+console.log(resulttt)
+
+// 2
+function ascending(a,b){
+    return a-b;
+}
+let g=[21,45,67,11];
+let r=g.sort(ascending)
+console.log(r);
+
+// From()
+let myArr=Array.from("3366890");
+console.log(myArr);
+
+// 2
+let myArr2=Array.from("213141516171819101");
+console.log(myArr2)
+
+// isArray(check whether the element is array or not)
+function func(){
+    console.log(Array.isArray("Good Morning"))
+}
+func();
+
+// 2
+function c(){
+    console.log(Array.isArray(9))
+}
+c();
+
+// 3
+function cd(){
+    console.log(Array.isArray([34]))
+}
+cd();
+
+
+// copywithin(copy the part of he array in itself and prints)
+let s=[2,4,5,7,9];
+console.log(s.copyWithin(1,2,3))
+
+// 2
+let w=[233,34,56,1,2,3,89];
+console.log(w.copyWithin(0,3,6))

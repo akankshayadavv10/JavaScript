@@ -1,38 +1,38 @@
 let arr=[10,20,"Akanksha",true]
 console.log(arr);
 
-length   
+// length(check the length of the array)
 console.log(arr.length);
 
-// toString()
+// toString(convert the array into string)
 console.log(arr);
 let a=arr.toString();
 console.log(a);
 console.log(typeof a);
 
-// join();
+// join(joins the lement of the array with seperator and that too should be in "");
 console.log(arr);
 let b=arr.join("|");
 console.log(b);
 
-// delete
+// delete(delete the element)
 delete arr[1];
 console.log(arr);
 
 delete arr[0];
 console.log(arr);
 
-// concat()
+// concat(merfe two or more arrays)
 let arr2=[1,"Hello",2,"Akku"];
 let newArr=arr.concat(arr2);
 console.log(newArr);
 
-// push()
+// push(add the element at last of array)
 console.log(arr);
 arr.push(200,3);
 console.log(arr);
 
-// unshift()
+// unshift(add the lelemnt at the starting of the array)
 console.log(arr);
 arr.unshift("HI");
 console.log(arr);
@@ -56,7 +56,7 @@ console.log(number);
 // slice
 
 
-// reverse()
+// reverse(reverse the eleemnt of the array)
 console.log(arr);
 console.log(arr.reverse());
 
@@ -67,12 +67,12 @@ const arrFruits=fruits.values();
     console.log(value);
 }
 
-// // fill()
+// // fill(fill the array with given static values)
 let array= new Array(10);
 array.fill("Helllo");
 console.log(array);
 
-// // includes()
+// // includes(check whether element is included or not)
 console.log(arr);
 let a1=arr.includes(50);
 console.log(a1);
