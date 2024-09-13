@@ -60,3 +60,6 @@ console.log(Math.pow(10,2));
 // 9(trunc-removes the fractional part)
 console.log(Math.trunc(15.56));
 
+// 10(sqrt-returns the square root)
+console.log(Math.sqrt(4));
+
