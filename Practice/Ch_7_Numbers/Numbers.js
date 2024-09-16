@@ -26,7 +26,7 @@ console.log(y);
 
 
 
-// Adding no. and stringss
+// Adding no. and strings
 let e=10;
 let f=11;
 console.log(e+f);
@@ -51,12 +51,12 @@ console.log(l);
 
 
 
-// *Numberv Literals
+// *Numbers Literals
 // 1(Decimal Numbers)
 let m=10.1;
 console.log(m);
 
-// 2(Octal Numbwrs( starts with 0 and the following number is smaller than 8))
+// 2(Octal Numbers( starts with 0 and the following number is smaller than 8))
 let n = 0562;
 console.log(n);
 
@@ -77,7 +77,7 @@ console.log(q);
 let r=undefined+10;
 console.log(r);
 
-// 2(Null to 0(null values is supposed to be 0))
+// 2(Null to 0(null value is supposed to be 0))
 let s=null+2;
 console.log(s);
 
@@ -87,7 +87,7 @@ let u=false-11;
 console.log(t);
 console.log(u);
 
-// 4(String to Number())
+// 4(String to Number(changes the string into numbers))
 let v='42';
 let w='Hello';
 const numFromString1 = Number(v);
