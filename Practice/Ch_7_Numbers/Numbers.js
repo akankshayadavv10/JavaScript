@@ -57,7 +57,7 @@ let m=10.1;
 console.log(m);
 
 // 2(Octal Numbers( starts with 0 and the following number is smaller than 8))
-let n = 0562;
+let n = 0O562;
 console.log(n);
 
 // 3(Binary Numbers(Starts with 0b or 0B followed  by 0 and 1))
