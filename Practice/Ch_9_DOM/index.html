@@ -9,7 +9,17 @@
 <h1 id="heading">HI</h1>
 <button onclick="changeText()" id="btn">Change Text</button>
 
-<script src="./index.js"></script>
+
+<h2>JAVASCRIPT HTML DOM</h2>
+    <p id="intro">Finding elements by Id</p>
+    <p id="demo"></p>
+   
+<script>
+    const element=document.getElementById("intro");
+document.getElementById("demo").innerHTML="The text from the paragraph is: "+element.innerHTML;
+
+
+</script>
     
 </body>
 </html>

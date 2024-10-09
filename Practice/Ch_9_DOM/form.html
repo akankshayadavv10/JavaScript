@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>JAVASCRIPT VALIDATION</h2>
+    <p>Please input a valid number from 11 to 20:</p>
+    <input id="numb">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            let x=document.getElementById("numb").value;
+            let text;
+            if(isNaN(x)||x<11||x>20){
+                text="Input not valid";
+            }
+            else{
+                text="Input is OK";
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>

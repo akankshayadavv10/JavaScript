@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+</head>
+<body>
+    <form action="" name="form">
+        <fieldset>
+            <legend>Login</legend>
+            <h1>Welcome Back</h1>
+            <input type="text" name="username" id="username" placeholder="Enter Username">
+            <input type="text" name="password" id="password" placeholder="Enter Password">
+            <label id="msg"></label>
+            <input onclick="validateForm()" type="button" value="Login" name="btn">
+        </fieldset>
+    </form>
+    <script>
+        function checkData(){
+            if(document.form.username.value!="" && document.form.password.value!=""){
+                alert("Login Success");
+            }
+            else{
+                document.getElementById("msg").innerText="Please fill all the blanks!!";
+            }
+        }
+        function validateForm(){
+            checkData()
+        }
+    </script>
+</body>
+</html>
