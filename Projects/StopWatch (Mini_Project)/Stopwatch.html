@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:white;
+
+        }
+
+        .time{
+            margin-top: 50px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            flex-direction: column;
+        }
+button{
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="time">
+        <h2 style="margin-bottom: 10px;">Stop Watch</h2>
+    <h1 id="time"></h1>
+    <button class="time" onclick="StartTimer()">Start Timer</button>
+    <button class="time" onclick="StopTimer()">Stop Timer</button>
+    <button class="time" onclick="ResetTImer()">Reset TImer</button>
+</div>
+
+    <script>
+        let interval
+        let t=0;
+        function StartTimer(){
+            interval=setInterval(()=>{
+                document.getElementById("time").innerText=t
+                t++
+            },1000)
+        }
+
+        function StopTimer(){
+            clearInterval(interval)
+        }
+
+        function ResetTImer(){
+            t=0;
+            document.getElementById("time").innerText=t;
+        }
+    </script>
+</body>
+</html>
