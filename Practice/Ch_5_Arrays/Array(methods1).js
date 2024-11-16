@@ -22,7 +22,7 @@ console.log(arr);
 delete arr[0];
 console.log(arr);
 
-// concat(merfe two or more arrays)
+// concat(merge two or more arrays)
 let arr2=[1,"Hello",2,"Akku"];
 let newArr=arr.concat(arr2);
 console.log(newArr);
@@ -76,3 +76,4 @@ console.log(array);
 console.log(arr);
 let a1=arr.includes(50);
 console.log(a1);
+
