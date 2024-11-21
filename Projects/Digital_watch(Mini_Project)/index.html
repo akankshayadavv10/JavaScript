@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Watch</title>
+    <style>
+        body{
+            background-color: #1d1d1d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 20px;
+        }
+        div{
+            width: 120px;
+            height: 200px;
+            background-color: #070707;
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: whitesmoke;
+            font-size: 50px;
+            border-radius: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+    
+    </style>
 </head>
 <body>
     <div id="hrs"></div>
@@ -25,7 +50,7 @@
             document.getElementById("sec").innerText=sec
         }
         window.addEventListener("load",time)
-        setInterval(time(),1000)
+        setInterval("time()",1000)
     </script>
 </body>
 </html>
