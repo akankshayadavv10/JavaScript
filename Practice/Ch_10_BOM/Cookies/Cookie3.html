@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expiration of Cookie</title>
+</head>
+<body>
+    <input type="text" id="data" placeholder="Enter data">
+    <input type="text" id="date" placeholder="Enter date">
+    <button onclick="SetCookie()">Set Cookie</button>
+    <button onclick="GetCookie()">Get Cookies</button>
+
+    <script>
+        function SetCookie(){
+            let str=`data=${document.getElementById("data").value};expires=${document.getElementById("date").value}`
+            console.log(str);
+            document.cookie=" "+str;
+            alert("Cookies saved successfully");
+        }
+        function GetCookie(){
+            let arr=document.cookie.split("=")
+            console.log(arr);
+
+            if(document.cookie!=0){
+                alert(`Data=${arr[1]} | TIme=${arr[3]}`)
+            }
+        }
+    </script>
+</body>
+</html>
