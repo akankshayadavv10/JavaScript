@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS sync / wait</h1>
+    <h2 id="demo"></h2>
+    <p>Wait for 3 seconds to see the result</p>
+    <script>
+        async function myDisplay(){
+            let mPromise=new Promise(function(resolve){
+              setTimeout(function(){
+                resolve("Hhhheeeelllloooo tttthhhhheeeerrrreeeee!!!!!");},5000);  
+            });
+                document.getElementById("demo").innerHTML=await mPromise;
+        }
+        myDisplay();
+    </script>
+</body>
+</html>
